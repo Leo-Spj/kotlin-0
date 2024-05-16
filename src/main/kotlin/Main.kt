@@ -1,5 +1,7 @@
 package com.utp
 
+
+import MyClass
 import java.util.*
 
 // Constantes, no se pueden modificar. Se deben ubicar fuera de las clases o funciones.
@@ -670,6 +672,11 @@ fun main(args: Array<String>) {
     }
 
 
+    // llamando a una clase java
+    // tuve que crear un paquete Java en src/main/ java
+    var myClass = MyClass("Clase Java")
+    var name: String = myClass.getName()
+    println(name)
 }
 
 class Car {
